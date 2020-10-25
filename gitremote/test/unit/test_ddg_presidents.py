@@ -31,7 +31,7 @@ def test_us_presidents():
 # # print(rsp_data["RelatedTopics"])
 #
 # for i in rsp_data["RelatedTopics"]:
-#     president_text.append("{Text}".format(**i))
+#     president_text.append("{Text}")
 #     # print("{Text}".format(**i))
 #
 # # print(president_text)
