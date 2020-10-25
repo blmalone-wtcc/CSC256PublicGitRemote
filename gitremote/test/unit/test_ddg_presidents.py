@@ -13,7 +13,7 @@ def test_us_presidents():
     resp = requests.get(url_ddg + "/?q=presidents+of+the+united+states&format=json")
     rsp_text = resp.json()
     for x in rsp_text["RelatedTopics"]:
-        president_text.append("{Text}".format(**i))
+        president_text.append("{Text}")
     for p in us_presidents:
         assert any(p in x for x in president_text)
 
