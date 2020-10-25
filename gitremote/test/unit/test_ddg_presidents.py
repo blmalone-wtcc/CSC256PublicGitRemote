@@ -16,25 +16,3 @@ def test_us_presidents():
         president_text.append("{Text}".format(**x))
     for p in us_presidents:
         assert any(p in x for x in president_text)
-
-
-
-# def test_us_presidents():
-#     resp = requests.get(url_ddg + "/?q=presidents+of+the+united+states&format=json")
-#     rsp_data = resp.json()
-#     assert "NO" in rsp_data["RelatedTopics"]
-
-# url_ddgPres = "https://api.duckduckgo.com/?q=presidents+of+the+united+states&format=json"
-#
-# response = requests.get(url_ddgPres)
-# rsp_data = response.json()
-# # print(rsp_data["RelatedTopics"])
-#
-# for i in rsp_data["RelatedTopics"]:
-#     president_text.append("{Text}")
-#     # print("{Text}".format(**i))
-#
-# # print(president_text)
-# for x in us_presidents:
-#     if any(x in y for y in president_text):
-#         print(x)
